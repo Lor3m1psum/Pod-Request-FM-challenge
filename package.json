@@ -2,7 +2,13 @@
   "name": "@pod-request-fm-challenge/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many --target=build",
+    "commit":"cz",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "start":"nx run-many --target=start"
+  },
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^18.4.1",
